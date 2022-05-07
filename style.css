@@ -1,0 +1,157 @@
+.head-line {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+.head-line svg {
+  width: 430px;
+}
+a{
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+}
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav a,
+.sidenav button {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background: none;
+  border: none;
+}
+
+.sidenav a:hover,
+.sidenav button:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.nav1{
+  display: flex;
+}
+.search-div{
+    display:flex;
+}
+.nav-search{
+    display:none;
+}
+.mobile-nav{
+  margin-right: 5px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .menus {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.menus {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 4px double #000;
+}
+.menus button {
+  background: none;
+  border: none;
+  margin: 5px;
+}
+.menus button:hover {
+  background-color: beige;
+}
+
+.news {
+  border-bottom: 1px solid black;
+}
+.news-img-size {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.no-news{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.news-in-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-bottom{
+  display:flex;
+  justify-content: space-between;
+}
+
+.navigation_wrap{
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-control{
+  display: flex;
+  position: fixed;
+  bottom:0;
+  right: 10px;
+}
+.page-control div{
+  margin: 5px;
+}
+
+.control-arrow{
+  text-align: center;
+  padding-top: 7px;
+  width: 30px;
+  height: 30px;
+  background-color: #a7a7a760;
+  border-radius: 50%;
+}
